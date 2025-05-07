@@ -1,0 +1,29 @@
+package org.zerock.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.security.RunAs;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.zerock.dto.BoardVO;
+import org.zerock.repository.BoardRepository;
+
+@Service
+public class BoardService {
+	
+	@Autowired
+	private BoardRepository boardRepository;
+	
+	public List<BoardVO> selectListBoard() {
+		return boardRepository.selectAllBoards();
+	}
+	
+	public BoardVO selectOnuByNum(int num) {
+		return boardRepository.selectOneByNum(num);
+	}
+	public void insertBoard(BoardVO vo) {
+		boardRepository.insertBoard(vo);
+	}
+}
