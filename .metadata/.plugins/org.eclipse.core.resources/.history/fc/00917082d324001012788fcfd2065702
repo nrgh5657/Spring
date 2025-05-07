@@ -1,6 +1,0 @@
-package org.zerock.mappere;
-
-public interface TimeMapper {
-
-	public String getTime();
-}
