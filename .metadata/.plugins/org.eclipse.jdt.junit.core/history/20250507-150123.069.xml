@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardMapperTests" project="ex02" tests="7" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="org.zerock.mapper.BoardMapperTests" incomplete="true">
+    <testcase name="testGetList" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+    <testcase name="test" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+    <testcase name="testInsertKey" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+    <testcase name="testDelete" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+    <testcase name="testInsert" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+    <testcase name="testPaging" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+    <testcase name="testUpdate" classname="org.zerock.mapper.BoardMapperTests" incomplete="true"/>
+  </testsuite>
+</testrun>

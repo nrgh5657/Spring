@@ -1,0 +1,8 @@
+package org.zerock.mapper;
+
+import org.zerock.domain.BoardVO;
+
+public interface BoardMapper {
+	
+	public BoardVO read(Long bno);
+}

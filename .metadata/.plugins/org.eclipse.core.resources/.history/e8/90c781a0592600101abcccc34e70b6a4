@@ -1,0 +1,47 @@
+package org.zerock.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.zerock.domain.BoardVO;
+import org.zerock.service.BoardService;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j;
+
+@Controller
+@RequestMapping("/board")
+@RequiredArgsConstructor
+@Log4j
+public class BoardController {
+	
+	private final BoardService service;
+	
+	@GetMapping("/list")
+	public void list() {
+		log.info("list......");
+	}
+	
+	@PostMapping("/register")
+	public void register(BoardVO board) {
+		log.info("register......");
+	}
+	
+	@GetMapping("/get")
+	public void get(long bno) {
+		log.info("get...........");
+	}
+	
+	@PostMapping("/remove")
+	public void remove(long bno) {
+		log.info("remove......");
+	}
+	
+	@PostMapping("/modify")
+	public void modify(BoardVO board) {
+		log.info("modify......");
+	}
+	
+	
+}

@@ -1,0 +1,25 @@
+package org.zerock.mapper;
+
+import java.util.List;
+
+import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criterial;
+
+public interface BoardMapper {
+	
+	
+	public List<BoardVO> getList();
+	
+	public BoardVO read(Long bno);
+	
+	public void insert(BoardVO board);
+	
+	public void insertSelectKey(BoardVO board);
+	
+	int delete(long bno);
+	
+	public int update(BoardVO board);
+	
+	public List<BoardVO> getListWithPaging(Criterial cri);
+	
+}
